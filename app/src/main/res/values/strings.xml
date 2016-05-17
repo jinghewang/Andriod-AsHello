@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">我的第一个Andriod 程序</string>
+    <string name="btn_name">Click Me</string>
+</resources>
