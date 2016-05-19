@@ -8,6 +8,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.StringTokenizer;
 
@@ -40,7 +42,8 @@ public class MainActivity extends AppCompatActivity {
         my_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                tv.setText(new Date().toString());
+                DateFormat format2 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+                tv.setText(format2.format(new Date()));
             }
         });
 
