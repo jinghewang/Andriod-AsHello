@@ -16,6 +16,12 @@ public class MainActivity extends AppCompatActivity {
     private int[] images = new int[]{R.drawable.img1,R.drawable.img2,R.drawable.img3,R.drawable.img4};
     private ImageView imageView ;
     private Integer currentIndex =0;
+    private Button my_btn = null;
+    private Button btnFirst= null;
+    private Button btnNext= null;
+    private Button btnPre = null;
+    private Button btnLast= null;
+    private TextView tv = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,12 +29,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //--
-        final Button my_btn = (Button) this.findViewById(R.id.my_btn);
-        final Button btnFirst = (Button)this.findViewById(R.id.btnFirst);
-        final Button btnNext = (Button)this.findViewById(R.id.btnNext);
-        final Button btnPre = (Button)this.findViewById(R.id.btnPre);
-        final Button btnLast = (Button)this.findViewById(R.id.btnLast);
-        final TextView tv = (TextView)this.findViewById(R.id.tv);
+        my_btn = (Button) this.findViewById(R.id.my_btn);
+        btnFirst = (Button)this.findViewById(R.id.btnFirst);
+        btnNext = (Button)this.findViewById(R.id.btnNext);
+        btnPre = (Button)this.findViewById(R.id.btnPre);
+        btnLast = (Button)this.findViewById(R.id.btnLast);
+        tv = (TextView)this.findViewById(R.id.tv);
         imageView = (ImageView)this.findViewById(R.id.imageView);
 
         my_btn.setOnClickListener(new View.OnClickListener() {
@@ -73,7 +79,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void show(String text){
-        final TextView tv = (TextView)this.findViewById(R.id.tv);
         tv.setText(text);
         Toast.makeText(getApplicationContext(), text,Toast.LENGTH_SHORT).show();
     }
