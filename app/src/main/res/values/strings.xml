@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">我的第一个Andriod 程序</string>
     <string name="btn_name">Click Me</string>
+    <string name="btn_first">首个</string>
     <string name="btn_next">下一个</string>
-    <string name="btn_last">上一个</string>
+    <string name="btn_pre">上一个</string>
+    <string name="btn_last">末个</string>
 </resources>
