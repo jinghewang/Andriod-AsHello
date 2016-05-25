@@ -35,6 +35,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/textClock" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开关"
+                android:id="@+id/switch1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/switchText"/>
         </LinearLayout>
         <LinearLayout
             android:layout_weight="8"

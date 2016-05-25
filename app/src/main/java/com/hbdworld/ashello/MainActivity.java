@@ -4,7 +4,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.ImageView;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
     private Button btnPre = null;
     private Button btnLast= null;
     private TextView tv = null;
+    private Switch switch1 = null;
+    private TextView switchText = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +42,9 @@ public class MainActivity extends AppCompatActivity {
         btnLast = (Button)this.findViewById(R.id.btnLast);
         tv = (TextView)this.findViewById(R.id.tv);
         imageView = (ImageView)this.findViewById(R.id.imageView);
+        switch1 = (Switch)this.findViewById(R.id.switch1);
+        switchText = (TextView)this.findViewById(R.id.switchText);
+
 
         my_btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,6 +78,13 @@ public class MainActivity extends AppCompatActivity {
                 currentIndex = images.length-1;
                 imageView.setImageResource(images[Math.abs(currentIndex)%4]);
                 show(currentIndex.toString());
+            }
+        });
+
+        switch1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                switchText.setText(b ? "打开" : "关闭");
             }
         });
     }
