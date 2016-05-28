@@ -31,6 +31,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button btn = (Button)this.findViewById(R.id.btnImage);
         btn.setOnClickListener(this);
 
+        btn = (Button)this.findViewById(R.id.btnListView);
+        btn.setOnClickListener(this);
 
     }
 
@@ -38,10 +40,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
 
-        switch (view.getId()){
+        Intent intent = null;
+        switch (view.getId()) {
             case R.id.btnImage:
-                Intent intent = new Intent();
-                intent.setClass(this,ImageActivity.class);
+                intent = new Intent();
+                intent.setClass(this, ImageActivity.class);
+                startActivity(intent);
+                break;
+
+            case R.id.btnListView:
+                intent = new Intent();
+                intent.setClass(this, ListViewActivity.class);
                 startActivity(intent);
                 break;
 
