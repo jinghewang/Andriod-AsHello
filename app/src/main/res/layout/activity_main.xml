@@ -17,45 +17,15 @@
 
         <LinearLayout
             android:layout_weight="1"
+            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <TextView
-                android:id="@+id/tv"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Hello World!" />
             <Button
-                android:id="@+id/my_btn"
-                android:text="@string/btn_name"
+                android:id="@+id/btnImage"
+                android:text="@string/btn_image"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 />
-            <TextClock
-                android:format24Hour="HH:mm:ss"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textClock" />
-
-            <Switch
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="开关"
-                android:id="@+id/switch1" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/switchText"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_weight="8"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/imageView"
-                android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true" />
         </LinearLayout>
 
         <LinearLayout
@@ -64,28 +34,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <Button
-                android:id="@+id/btnFirst"
-                android:text="@string/btn_first"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="btnFirst_Click"
-                />
-            <Button
-                android:id="@+id/btnNext"
-                android:text="@string/btn_next"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                />
-            <Button
-                android:id="@+id/btnPre"
-                android:text="@string/btn_pre"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                />
-
-            <Button
-                android:id="@+id/btnLast"
-                android:text="@string/btn_last"
+                android:id="@+id/btnListView"
+                android:text="@string/btn_listview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 />
