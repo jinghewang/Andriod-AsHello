@@ -26,9 +26,9 @@ public class ListViewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_list_view);
 
         //--
-        //listView = (ListView)this.findViewById(R.id.listView);
-        //ListAdapter listAdapter = new ArrayAdapter<String>(this,R.layout.lv_simple_item,strs);
-        //listView.setAdapter(listAdapter);
+        listView = (ListView)this.findViewById(R.id.listView);
+        ListAdapter listAdapter = new ArrayAdapter<String>(this,R.layout.lv_simple_item,strs);
+        listView.setAdapter(listAdapter);
 
     }
 }
